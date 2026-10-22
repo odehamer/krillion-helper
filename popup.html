@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Krillion Helper</h1>
+  <label class="check">
+    <input type="checkbox" id="party">
+    <span>Puffer Party mode<small>Saves answers other players use for each question and never suggests them.</small></span>
+  </label>
+  <label for="prompt">Prompt</label>
+  <textarea id="prompt" rows="3" placeholder="Reading the screen… or type the prompt"></textarea>
+  <p class="hint" id="source"></p>
+  <div class="buttons">
+    <button id="go">Get answers</button>
+    <button id="again" class="secondary" title="Get different answers for the same prompt" disabled>↻ New answers</button>
+  </div>
+  <p id="status"></p>
+  <ol id="answers"></ol>
+  <p class="hint">Click an answer to copy it. Answers also appear on the game page. <a href="options.html" target="_blank">Settings</a></p>
+  <script src="ai.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Krillion Helper Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="options">
+  <h1>Krillion Helper Settings</h1>
+  <label for="apiKey">Anthropic API key</label>
+  <input id="apiKey" type="password" placeholder="sk-ant-…" autocomplete="off">
+  <p class="hint">Get one at console.anthropic.com. It's stored only in this browser. Leave blank to use ANTHROPIC_API_KEY from the extension's .env file.</p>
+  <label for="model">Model</label>
+  <select id="model">
+    <option value="claude-opus-5-5">Claude Opus 5.5 (most accurate)</option>
+    <option value="claude-sonnet-5-5">Claude Sonnet 5.5 (faster, cheaper)</option>
+    <option value="claude-haiku-5-5">Claude Haiku 5.5 (fastest, cheapest)</option>
+  </select>
+  <button id="save">Save</button>
+  <p id="status"></p>
+  <script src="options.js"></script>
+</body>
+</html>

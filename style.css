@@ -1,0 +1,35 @@
+body { width: 320px; margin: 0; padding: 12px; font: 13px/1.4 system-ui, sans-serif; color: #1a1a1a; background: #fff; }
+h1 { font-size: 15px; margin: 0 0 10px; }
+label { display: block; font-weight: 600; margin: 8px 0 4px; }
+textarea { width: 100%; box-sizing: border-box; padding: 6px; font: inherit; border: 1px solid #ccc; border-radius: 6px; resize: vertical; }
+button { margin-top: 8px; width: 100%; padding: 8px; font: inherit; font-weight: 600; border: 0; border-radius: 6px; background: #0b6bcb; color: #fff; cursor: pointer; }
+button:disabled { opacity: .6; cursor: default; }
+code { font-size: 11px; }
+.hint { color: #666; font-size: 12px; margin: 4px 0; }
+#status { min-height: 1em; margin: 8px 0 0; }
+#answers { padding-left: 22px; margin: 8px 0; }
+#answers li { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; cursor: pointer; }
+#answers li:hover { color: #0b6bcb; }
+#answers .word { font-weight: 600; }
+.tag { font-size: 11px; padding: 1px 6px; border-radius: 8px; background: #eee; color: #555; white-space: nowrap; }
+.tag.obscure { background: #e3f4e6; color: #1d6b2c; }
+.tag.uncommon { background: #fff3d6; color: #7a5a00; }
+@media (prefers-color-scheme: dark) {
+  body { background: #202124; color: #e8eaed; }
+  textarea { background: #2b2c2f; color: #e8eaed; border-color: #555; }
+  .hint { color: #9aa0a6; }
+  .tag { background: #3c4043; color: #ccc; }
+  .tag.obscure { background: #1e3a24; color: #8fd19e; }
+  .tag.uncommon { background: #3d3418; color: #e6c46b; }
+}
+body.options { width: auto; max-width: 420px; margin: 24px auto; }
+input, select { width: 100%; box-sizing: border-box; padding: 6px; font: inherit; border: 1px solid #ccc; border-radius: 6px; }
+@media (prefers-color-scheme: dark) { input, select { background: #2b2c2f; color: #e8eaed; border-color: #555; } }
+.buttons { display: flex; gap: 6px; }
+.buttons button { flex: 1; }
+button.secondary { background: #e8eaed; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) { button.secondary { background: #3c4043; color: #e8eaed; } }
+label.check { display: flex; gap: 8px; align-items: flex-start; font-weight: 600; margin: 0 0 8px; padding: 8px; border-radius: 6px; background: #f1f3f4; cursor: pointer; }
+label.check input { margin-top: 2px; }
+label.check small { display: block; font-weight: 400; color: #666; font-size: 11px; }
+@media (prefers-color-scheme: dark) { label.check { background: #2b2c2f; } label.check small { color: #9aa0a6; } }
